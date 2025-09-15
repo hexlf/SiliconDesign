@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 :root{
+    --clr-text-primary: #565873;
+    
     
 }
 
@@ -8,6 +12,61 @@
     box-sizing: border-box;
 }
 
-html{
-    color-scheme: dark;
+#nav{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle {
+    --_W: 40px;
+    --_H: 20px;
+
+    width: var(--_W);
+    height: var(--_H);
+
+    position: relative;
+    display: inline-block;
+
+    input[type="checkbox"]{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    .slider{
+        position: absolute;
+        cursor: pointer;
+        inset: 0;
+        background-color: #ccc;
+        border-radius: 100vw;
+        box-shadow: inset 0 0 3px #00000038;
+
+        transition: 400ms;
+    }
+
+    .slider::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        aspect-ratio: 1;
+        background-color:#fff;
+        border-radius: 50%;
+        box-shadow: 0 0 4px #00000057;
+
+        transition: 400ms;
+    }
+
+    input[type="checkbox"]:checked + .slider::before {
+        left:calc(100% - var(--_H));
+        background-color: rgba(10, 54, 10, 0.815);
+    }
+
+    input[type="checkbox"]:checked + .slider {
+        background-color: rgba(4, 180, 4, 0.815);
+    }
+
 }
