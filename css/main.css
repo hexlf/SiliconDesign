@@ -3,7 +3,7 @@
 :root{
     --clr-gradient:linear-gradient(to right, var(--color-primary), #8B5CF6, #D946EF);
     --color-primary: #6366F1;
-
+    
 
     --clr-header: #0B0F19;
     --clr-button-sec: #EFF2FC;
@@ -140,6 +140,8 @@ button, .btn{
 }
 
 .hero{
+    background: #ffffff;
+    background: (170deg, rgba(255, 255, 255, 0.07) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(99, 102, 241, 0.07) 83%);
 
     .hero-area{
         display: flex;
