@@ -1,22 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root{
+    --clr-gradient:linear-gradient(to right, var(--color-primary), #8B5CF6, #D946EF);
+    --color-primary: #6366F1;
+
+
+    --clr-header: #0B0F19;
+    --clr-button-sec: #EFF2FC;
+    --clr-button-background: var(--color-primary);
+    --clr-button-text-color: #fff;
     --clr-text-primary: #565873;
-    
-    
+    --clr-text-background: var(--color-primary);
+    --clr-body-background: #fff;
+    --clr-slider-ring-background: #fff;
+    --clr-slider-background: #9397AD;
+    --clr-slider-checked-background: #22C55E;
+}
+
+body{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Manrope", sans-serif;
+    line-height: 1.5;
+
+    background-color: var(--clr-body-background);
+}
+
+html{
+    color-scheme: light;
+}
+
+.dark{
+    color-scheme: dark;
 }
 
 *, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-#nav{
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .toggle {
@@ -39,7 +61,7 @@
         position: absolute;
         cursor: pointer;
         inset: 0;
-        background-color: #ccc;
+        background-color: var(--clr-slider-background);
         border-radius: 100vw;
         box-shadow: inset 0 0 3px #00000038;
 
@@ -53,7 +75,7 @@
         left: 0;
         height: 100%;
         aspect-ratio: 1;
-        background-color:#fff;
+        background-color:var(--clr-slider-ring-background);
         border-radius: 50%;
         box-shadow: 0 0 4px #00000057;
 
@@ -62,11 +84,56 @@
 
     input[type="checkbox"]:checked + .slider::before {
         left:calc(100% - var(--_H));
-        background-color: rgba(10, 54, 10, 0.815);
+        background-color: var(--clr-slider-ring-background);
     }
 
     input[type="checkbox"]:checked + .slider {
-        background-color: rgba(4, 180, 4, 0.815);
+        background-color: var(--clr-slider-checked-background);
+    }
+
+}
+
+.container{
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header{
+
+    .header-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        
+
+        .actions{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+}
+
+button, .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--clr-body-background);
+    background-color: var(--clr-button-background);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+
+    img{
+        height: 18px;
+        width: 18px;
     }
 
 }
