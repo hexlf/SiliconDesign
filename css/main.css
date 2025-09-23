@@ -139,18 +139,39 @@ button, .btn{
 
 }
 
+
+
 .hero{
     background: #ffffff;
-    background: (170deg, rgba(255, 255, 255, 0.07) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(99, 102, 241, 0.07) 83%);
+    background:linear-gradient(175deg, rgba(255, 255, 255, 0.07) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(99, 102, 241, 0.07) 83%);
+    padding-top: 5rem;
 
     .hero-area{
-        display: flex;
-        justify-content: space-between;
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        text-align: left;
+
         .hero-content{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .hero-title{
+                font-size: 56px;
+                font-weight: 800;
+
+            }
+
+            .hero-ingress{
+                font-size: 18px;
+                font-weight: 400;
+            }
+
         }
 
         .hero-image{
+            
         }
 
     }
