@@ -237,16 +237,16 @@ button, .btn{
                 display: grid;
                 grid-template-columns: 210px 210px;
                 align-items: center;
-                gap: 1rem;
+                
 
             }
 
         }
-        /*
+        
         .hero-image{
-
+            display: flex; /*<--- this is need for it not u can see in your videos to*/
         }
-        */
+        
     }
 }
 
@@ -274,6 +274,7 @@ button, .btn{
 .Features{
 
     .Features-image{
+        display: flex;
         width: 348px;
         margin-right: 13.5rem;
         img{
@@ -282,7 +283,10 @@ button, .btn{
             
         }
     }
+    
+    .Features-head-text{
 
+    }
 
 
 }
