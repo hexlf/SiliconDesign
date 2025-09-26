@@ -23,6 +23,8 @@
     --clr-button-download-text: #ffffff;
     --clr-button-download-background: #0B0F19;
     --clr-button-download-hover-background: #0B0F19;
+
+    --clr-HowDoes-background: #F3F6FF;
 }
 
 body{
@@ -233,7 +235,7 @@ button, .btn{
             }
 
             .app-download-buttons{
-                margin-top: 2rem;
+                padding-top: 2rem;
                 display: grid;
                 grid-template-columns: 210px 210px;
                 align-items: center;
@@ -276,6 +278,7 @@ button, .btn{
     .Features-area{
         display: flex;
         flex-direction: row;
+        padding-bottom: 112px;
 
         .Features-image{
             display: flex;
@@ -293,7 +296,7 @@ button, .btn{
             .Features-head-text{
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 67px;
+                padding-bottom: 67px;
             }
 
             .Card-area{
@@ -318,13 +321,51 @@ button, .btn{
                         max-width: 261px;
                         gap: 12px;
                     }
-
                 }
 
             }
 
         }
+    }
 
+}
+
+.How-Does-It-Work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 1077px;
+    background-color: var(--clr-HowDoes-background);
+    .all-in-the-midel{
+        display: flex;
+        img{
+            margin-top: 59px;
+            margin-bottom: 40px;
+
+            width: 1184px;
+            height: 663px;
+        }
+
+        .all-top{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            img{
+                align-self: center;
+            }
+        }
+
+        .all-bottom{
+            align-self: center;
+            max-width: 636px;
+            max-height: 98px;
+
+            h3{
+                padding-bottom: 12px;
+            }
+
+        }
     }
 
 }
