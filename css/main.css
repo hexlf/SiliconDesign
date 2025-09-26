@@ -272,21 +272,59 @@ button, .btn{
 }
 
 .Features{
-
-    .Features-image{
-        display: flex;
-        width: 348px;
-        margin-right: 13.5rem;
-        img{
-            width: 348px;
-            height: 684px;
-            
-        }
-    }
     
-    .Features-head-text{
+    .Features-area{
+        display: flex;
+        flex-direction: row;
+
+        .Features-image{
+            display: flex;
+            width: 348px;
+            margin-right: 13.5rem;
+            img{
+                width: 348px;
+                height: 684px;
+            
+            }
+
+        }
+        
+        .Features-content{
+            .Features-head-text{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 67px;
+            }
+
+            .Card-area{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 48px;
+                column-gap: 56px;
+                .Card-layout{
+                    display: flex;
+                    gap: 24px;
+                    .Card-image{
+                        
+                        img{
+                            max-width: 60px;
+                            max-height: 60px;
+                        }
+                    }
+
+                    .Card-content{
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 261px;
+                        gap: 12px;
+                    }
+
+                }
+
+            }
+
+        }
 
     }
-
 
 }
