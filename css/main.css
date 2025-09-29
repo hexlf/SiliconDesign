@@ -25,6 +25,7 @@
     --clr-button-download-hover-background: #0B0F19;
 
     --clr-HowDoes-background: #F3F6FF;
+    --clr-Subscribe-background: #F3F6FF;
 }
 
 body{
@@ -334,7 +335,7 @@ button, .btn{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    margin-bottom: 65px;
     height: 1077px;
     background-color: var(--clr-HowDoes-background);
     .all-in-the-midel{
@@ -368,4 +369,66 @@ button, .btn{
         }
     }
 
+}
+
+.Subscribe{
+    .Subscribe-area{     
+        display: flex;
+        background-color: var(--clr-Subscribe-background); 
+        width: 1296px;
+        height: 222px;
+        justify-content: center;
+        align-items: center;
+        gap: 78px;
+
+        .Subscribe-content{
+            display: flex;
+            flex-direction: row;
+            width: 526px;
+            height: 78px;
+            gap: 32px;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                max-height: 78px;
+                max-width: 78px;
+            }
+
+        }
+
+        .Subscribe-button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .Text-area{
+                border-radius: 4px;
+                input[type=text]{
+
+                    height: 52px;
+                    width: 330px;
+                }
+
+                .but{
+                    display: flex;
+                    width: 142px;
+                    height: 52px;
+                    border: hidden;
+                }
+                
+                img{
+                    position: absolute;
+                    max-width: 20px;
+                    max-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.midel{
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
 }
